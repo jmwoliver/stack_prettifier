@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Stack Prettifier",
+    "version": "1.0",
+  
+    "description": "Makes Stack Overflow/Exchange less trash to use. Gets rid of the left and right sidebars, as well as the footer.",
+  
+    "icons": {
+      "96": "icons/stack_prettifier-96.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.stackoverflow.com/*", "*://*.stackexchange.com/*"],
+        "js": ["stack_prettifier.js"]
+      }
+    ]
+  
+  }
